@@ -1,0 +1,96 @@
+/* Your code here */
+.interest__bar{
+    display: flex;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    font-size: 12px;
+    font-family: georgia,"times new roman",times,serif;
+    padding: 0;
+}
+
+.interest__bar-section{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding: 15px 0;
+
+}
+.interest-border{
+    border-right: 1px solid lightgray;
+}
+
+.interests-bar__headline{
+    display: flex;
+    flex-direction: column;
+}
+.interests-bar__headline>h2{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.interests-bar__story{
+    padding-right: 1rem;
+}
+
+.interest__bar-image {
+    width: 75px;
+    height: 75px;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 0 7px;
+}
+.section__prices-bar{
+    display: grid;
+    width: 150px;
+    flex-direction:column;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "name0 time0"
+    "name1 time1"
+    "name2 time2";
+
+}
+
+.section__prices-bar_span{
+    padding-left: 10px;
+    font-weight: bold;
+
+}
+
+
+.section__prices-bar_nums{
+    justify-self: end;
+    padding-right: 1rem;
+    color: green;
+    font-weight: bold;
+
+}
+
+.interests-bar__big-text{
+    margin: 10px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    /* .main_divs {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "grid-left"
+            "grid-right";
+    }
+
+    .main__left {
+        grid-area: grid-left;
+        width: 100%;
+    } */
+    .interest__bar {
+        display: none;
+
+  }
+}
